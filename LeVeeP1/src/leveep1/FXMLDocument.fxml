@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="leveep1.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" layoutX="93.0" layoutY="14.0" prefWidth="142.0" text="Tipster Tip Calculator" AnchorPane.leftAnchor="89.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="61.0" text="Total:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="61.0" />
+      <Label layoutX="25.0" layoutY="93.0" text="Diners:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="93.0" />
+      <Label layoutX="128.0" layoutY="139.0" text="Tip:" AnchorPane.topAnchor="139.0" />
+      <Label layoutX="25.0" layoutY="163.0" text="Tip Percent:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="163.0" />
+      <Label layoutX="25.0" layoutY="234.0" text="Tip Amount:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="234.0" />
+      <Label layoutX="25.0" layoutY="269.0" text="Subtotal:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="269.0" />
+      <Label layoutX="25.0" layoutY="304.0" text="Price Per Diner:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="304.0" />
+      <TextField fx:id="tFieldTotal" alignment="CENTER_RIGHT" layoutX="130.0" layoutY="57.0" text="0.00" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="57.0" />
+      <TextField fx:id="tFieldDiners" alignment="CENTER_RIGHT" layoutX="130.0" layoutY="89.0" text="1" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="89.0" />
+      <TextField fx:id="tFieldTip" alignment="CENTER_RIGHT" editable="false" layoutX="130.0" layoutY="230.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="230.0" />
+      <TextField fx:id="tFieldSub" alignment="CENTER_RIGHT" editable="false" layoutX="130.0" layoutY="265.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="265.0" />
+      <TextField fx:id="tFieldPer" alignment="CENTER_RIGHT" editable="false" layoutX="130.0" layoutY="300.0" prefHeight="25.0" prefWidth="165.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="300.0" />
+      <Label fx:id="labelTip" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="152.0" layoutY="139.0" prefHeight="17.0" prefWidth="47.0" text="0" AnchorPane.topAnchor="139.0" />
+      <Label layoutX="203.0" layoutY="139.0" text="\%" AnchorPane.topAnchor="139.0" />
+      <Slider fx:id="sliderTip" layoutX="95.0" layoutY="163.0" majorTickUnit="5.0" max="40.0" minorTickCount="4" prefHeight="38.0" prefWidth="210.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="163.0" />
+      <Line endX="169.0" layoutX="157.0" layoutY="39.0" startX="-100.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="40.0" />
+      <Line endX="169.0" layoutX="125.5" layoutY="212.0" startX="-100.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Label fx:id="labelException" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="120.0" prefHeight="17.0" prefWidth="270.0" textFill="RED" />
+      <Button fx:id="buttReset" layoutX="254.0" layoutY="334.0" mnemonicParsing="false" onAction="#ResetListen" text="Reset" />
+   </children>
+</AnchorPane>
