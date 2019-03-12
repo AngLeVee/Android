@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mobile Tipster</string>
+    <string name="total">Total:</string>
+    <string name="diners">Diners:</string>
+    <string name="tip">Tip:</string>
+    <string name="percentage">%</string>
+    <string name="tip_amt">Tip Amount:</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="per_diner">Price Per Diner:</string>
+    <string name="reset">Reset</string>
+    <string name="calc">Calculate</string>
+</resources>

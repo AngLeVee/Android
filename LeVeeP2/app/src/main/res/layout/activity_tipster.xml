@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Program: LeVeeP2-->
+<!--File: activity_tipster-->
+<!--Programmer: Angela LeVee (alevee@cnm.edu)-->
+<!--Objective: Sets gui for TipsterActivity-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccentLight"
+    tools:context="mobiletipster.leveep2.cis2237.com.leveep2.TipsterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccentLight"
+            android:textSize="@dimen/header_text" />
+
+        <GridLayout
+            android:id="@+id/gLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_bar"
+            android:layout_margin="@dimen/padding"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="@string/total"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <EditText
+                    android:id="@+id/totalET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="end"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/transparent"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/totalTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/totalET"
+                    android:layout_alignBottom="@id/totalET"
+                    android:layout_alignEnd="@id/totalET"
+                    android:layout_alignRight="@id/totalET"
+                    android:textSize="@dimen/text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diners"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/dinersET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:ems="10"
+                android:gravity="end"
+                android:inputType="number"
+                android:textSize="@dimen/text_size" />
+
+
+        </GridLayout>
+
+
+        <TextView
+            android:id="@+id/percentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/gLayout1"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/percentage"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gLayout1"
+            android:layout_toLeftOf="@id/percentTV"
+            android:layout_toStartOf="@id/percentTV"
+            android:paddingRight="@dimen/padding"
+            android:text="@string/tip"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/tipTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gLayout1"
+            android:layout_toLeftOf="@id/percentTV"
+            android:layout_toStartOf="@id/percentTV"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <SeekBar
+            android:id="@+id/tipseek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/percentTV"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:max="30"
+            android:progress="15"
+            android:thumb="@drawable/thumb"/>
+
+        <GridLayout
+            android:id="@+id/gLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tipseek"
+            android:layout_margin="@dimen/padding"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="@string/tip_amt"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:layout_gravity="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/tipamtTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/editText3"
+                    android:layout_alignBottom="@id/editText3"
+                    android:layout_alignEnd="@id/editText3"
+                    android:layout_alignRight="@id/editText3"
+                    android:textSize="@dimen/text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtotal"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/subtotalTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/editText4"
+                    android:layout_alignBottom="@id/editText4"
+                    android:layout_alignEnd="@id/editText4"
+                    android:layout_alignRight="@id/editText4"
+                    android:textSize="@dimen/text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/per_diner"
+                android:textSize="@dimen/text_size" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/priceperTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/editText5"
+                    android:layout_alignBottom="@id/editText5"
+                    android:layout_alignEnd="@id/editText5"
+                    android:layout_alignRight="@id/editText5"
+                    android:textSize="@dimen/text_size" />
+            </RelativeLayout>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/gLayout2"
+            android:layout_margin="@dimen/padding"
+            android:background="@color/colorPrimary"
+            android:text="@string/reset"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/reset"
+            android:layout_alignBottom="@id/reset"
+            android:background="@color/colorPrimary"
+            android:text="@string/calc"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+</ScrollView>
