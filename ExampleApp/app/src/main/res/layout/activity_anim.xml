@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/catAnimIV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:onClick="startAnim"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cat" />
+
+    <Button
+        android:id="@+id/fadeButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="2"
+        android:text="Fade"
+        app:layout_constraintBottom_toBottomOf="@id/fmButt"
+        app:layout_constraintEnd_toStartOf="@id/fmButt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fmButt" />
+
+    <Button
+        android:id="@+id/fmButt"
+        style="@style/ComboButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="3"
+        android:text="Fade &amp;\nMove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/moveButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="5"
+        android:text="Move"
+        app:layout_constraintBottom_toBottomOf="@id/fmButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fmButt"
+        app:layout_constraintTop_toTopOf="@id/fmButt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/frButt"
+        style="@style/ComboButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="4"
+        android:text="Fade &amp;\nRotate"
+        app:layout_constraintBottom_toTopOf="@id/rotateButt"
+        app:layout_constraintEnd_toEndOf="@id/fadeButt"
+        app:layout_constraintStart_toStartOf="@id/fadeButt"
+        app:layout_constraintTop_toBottomOf="@id/fadeButt" />
+
+    <Button
+        android:id="@+id/allButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="1"
+        android:text="All"
+        app:layout_constraintBottom_toTopOf="@id/rsButt"
+        app:layout_constraintEnd_toEndOf="@id/fmButt"
+        app:layout_constraintStart_toStartOf="@id/fmButt"
+        app:layout_constraintTop_toBottomOf="@id/fmButt" />
+
+    <Button
+        android:id="@+id/msButt"
+        style="@style/ComboButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="6"
+        android:text="Move &amp;\nScale"
+        app:layout_constraintBottom_toTopOf="@id/scaleButt"
+        app:layout_constraintEnd_toEndOf="@id/moveButt"
+        app:layout_constraintStart_toStartOf="@id/moveButt"
+        app:layout_constraintTop_toBottomOf="@id/moveButt" />
+
+    <Button
+        android:id="@+id/rotateButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="7"
+        android:text="Rotate"
+        app:layout_constraintBottom_toBottomOf="@id/rsButt"
+        app:layout_constraintEnd_toStartOf="@id/rsButt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rsButt" />
+
+    <Button
+        android:id="@+id/rsButt"
+        style="@style/ComboButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="8"
+        android:text="Rotate &amp;\nScale"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/fmButt"
+        app:layout_constraintStart_toStartOf="@id/fmButt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:id="@+id/scaleButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="9"
+        android:text="Scale"
+        app:layout_constraintBottom_toBottomOf="@id/rsButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rsButt"
+        app:layout_constraintTop_toTopOf="@id/rsButt" />
+</android.support.constraint.ConstraintLayout>

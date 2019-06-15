@@ -3,6 +3,7 @@ package com.ajensen.exampleapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -26,6 +27,8 @@ public class CurrencyConverter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_currency);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Currency Converter");
         convertButt = (Button) findViewById(R.id.convertButt);
         dollarET = (EditText) findViewById(R.id.dollarET);
         resultTV = (TextView) findViewById(R.id.resultTV);

@@ -17,8 +17,9 @@
         </activity>
         <activity android:name=".Tutorial"></activity>
         <activity android:name=".CurrencyConverter"></activity>
-        <activity android:name=".Fade"></activity>
+        <activity android:name=".Animation"></activity>
         <activity android:name=".ConnectThree"></activity>
+        <activity android:name=".Video"></activity>
     </application>
 
 </manifest>

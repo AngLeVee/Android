@@ -14,7 +14,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42">
 
         <Button
             android:id="@+id/tutorialButt"
@@ -31,23 +32,28 @@
             android:onClick="click"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="Currency Converter"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:text="Currency Converter"/>
 
         <Button
-            android:id="@+id/fadeButt"
+            android:id="@+id/animButt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="click"
-            android:text="Fade Animation" />
+            android:text="Animations" />
 
         <Button
             android:id="@+id/connectButt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="click"
-            android:text="Connect Three"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:text="Connect Three"/>
+
+        <Button
+            android:id="@+id/videoButt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="Video &amp; Audio"/>
 
     </LinearLayout>
 
